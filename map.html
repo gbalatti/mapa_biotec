@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_437b14d5025821fd50bbfae5d7d64c1c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_437b14d5025821fd50bbfae5d7d64c1c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_437b14d5025821fd50bbfae5d7d64c1c = L.map(
+                "map_437b14d5025821fd50bbfae5d7d64c1c",
+                {
+                    center: [-33.34996624092489, -60.58333119565294],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b2700d3b90611173fd1d20e2cea6018e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b2700d3b90611173fd1d20e2cea6018e.addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var marker_9b57be29fc4d08def4b6932342da1f4d = L.marker(
+                [-34.63746745513084, -58.41099709158392],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_5012434d70599b7e9b21c7904415bbb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b57be29fc4d08def4b6932342da1f4d.setIcon(icon_5012434d70599b7e9b21c7904415bbb2);
+        
+    
+        var popup_17308aff8c8993d4d565b1f50b251c85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc0a9440472c7678b90307073fe467c7 = $(`<div id="html_fc0a9440472c7678b90307073fe467c7" style="width: 100.0%; height: 100.0%;">Universidad: Instituto Universitario para el Desarrollo Productivo y Tecnológico Empresarial de la Argentina<br>Título: Técnico/a Universitario/a en Biotecnología</div>`)[0];
+                popup_17308aff8c8993d4d565b1f50b251c85.setContent(html_fc0a9440472c7678b90307073fe467c7);
+            
+        
+
+        marker_9b57be29fc4d08def4b6932342da1f4d.bindPopup(popup_17308aff8c8993d4d565b1f50b251c85)
+        ;
+
+        
+    
+    
+            var marker_b034cc4ceaa579f0c761b39819263df8 = L.marker(
+                [-34.61552097122747, -58.3654090467838],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_132254673837f36088d66438f984efad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b034cc4ceaa579f0c761b39819263df8.setIcon(icon_132254673837f36088d66438f984efad);
+        
+    
+        var popup_40721ca86af0729f8baf4fd20fb7d278 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f3dad5e88a0edaac947b75f439c1539 = $(`<div id="html_7f3dad5e88a0edaac947b75f439c1539" style="width: 100.0%; height: 100.0%;">Universidad: Pontificia Universidad Católica Argentina Santa María de los Buenos Aires<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_40721ca86af0729f8baf4fd20fb7d278.setContent(html_7f3dad5e88a0edaac947b75f439c1539);
+            
+        
+
+        marker_b034cc4ceaa579f0c761b39819263df8.bindPopup(popup_40721ca86af0729f8baf4fd20fb7d278)
+        ;
+
+        
+    
+    
+            var marker_81e4c3ce7e0dc4ea168b1b744df38ae7 = L.marker(
+                [-34.61677129154457, -58.38177267454228],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_3fdbe55015c0e88fbd8d87e9e2c69d44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81e4c3ce7e0dc4ea168b1b744df38ae7.setIcon(icon_3fdbe55015c0e88fbd8d87e9e2c69d44);
+        
+    
+        var popup_d1b8ec4861f34b89fc613c1397d5d480 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99046b9c667405ad9490802cbc37ae80 = $(`<div id="html_99046b9c667405ad9490802cbc37ae80" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Argentina de la Empresa<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_d1b8ec4861f34b89fc613c1397d5d480.setContent(html_99046b9c667405ad9490802cbc37ae80);
+            
+        
+
+        marker_81e4c3ce7e0dc4ea168b1b744df38ae7.bindPopup(popup_d1b8ec4861f34b89fc613c1397d5d480)
+        ;
+
+        
+    
+    
+            var marker_48b6cff6e95030b792c60b18be5c6ff3 = L.marker(
+                [-34.61677129154457, -58.38177267454228],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_007e0b30cb5423bd984837d1076162a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_48b6cff6e95030b792c60b18be5c6ff3.setIcon(icon_007e0b30cb5423bd984837d1076162a9);
+        
+    
+        var popup_4ccaefcbca4333f19f8eccc436c9dcae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04dcded29ddf76dcae6cb2cc4d7d3a99 = $(`<div id="html_04dcded29ddf76dcae6cb2cc4d7d3a99" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Argentina de la Empresa<br>Título: Técnico Universitario en Biotecnología</div>`)[0];
+                popup_4ccaefcbca4333f19f8eccc436c9dcae.setContent(html_04dcded29ddf76dcae6cb2cc4d7d3a99);
+            
+        
+
+        marker_48b6cff6e95030b792c60b18be5c6ff3.bindPopup(popup_4ccaefcbca4333f19f8eccc436c9dcae)
+        ;
+
+        
+    
+    
+            var marker_39bef10b5bdbfaf254f89548fecd76a2 = L.marker(
+                [-34.64632373927495, -58.6202755486974],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_efe4d085073106f3b727f5d8d98762cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_39bef10b5bdbfaf254f89548fecd76a2.setIcon(icon_efe4d085073106f3b727f5d8d98762cc);
+        
+    
+        var popup_0beeae444d8958227948dbfc2d2d81d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb923a97242dfc0974e8d69e3856da36 = $(`<div id="html_bb923a97242dfc0974e8d69e3856da36" style="width: 100.0%; height: 100.0%;">Universidad: Universidad de Morón<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_0beeae444d8958227948dbfc2d2d81d9.setContent(html_bb923a97242dfc0974e8d69e3856da36);
+            
+        
+
+        marker_39bef10b5bdbfaf254f89548fecd76a2.bindPopup(popup_0beeae444d8958227948dbfc2d2d81d9)
+        ;
+
+        
+    
+    
+            var marker_dc6f741f7e7ec6696039d1457c74eaf4 = L.marker(
+                [-31.43736058649344, -64.19251007725774],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_4609789864ccc0fea4ac7d4d4a59bdb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc6f741f7e7ec6696039d1457c74eaf4.setIcon(icon_4609789864ccc0fea4ac7d4d4a59bdb0);
+        
+    
+        var popup_e922b044782c8055037eeaa6d456273a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36375f7b5288e7d4fbd1d29b58aaba1f = $(`<div id="html_36375f7b5288e7d4fbd1d29b58aaba1f" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Córdoba<br>Título: Licenciado/a en Biotecnología</div>`)[0];
+                popup_e922b044782c8055037eeaa6d456273a.setContent(html_36375f7b5288e7d4fbd1d29b58aaba1f);
+            
+        
+
+        marker_dc6f741f7e7ec6696039d1457c74eaf4.bindPopup(popup_e922b044782c8055037eeaa6d456273a)
+        ;
+
+        
+    
+    
+            var marker_09be5c45c9454cb434169608a2c248ee = L.marker(
+                [-34.61818186925787, -58.63681084403003],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_1aa89770c85db029d444813f0d06e752 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09be5c45c9454cb434169608a2c248ee.setIcon(icon_1aa89770c85db029d444813f0d06e752);
+        
+    
+        var popup_cf3fd494a1979ea0a7eee8e2f43065b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f643cad6b63e550b7d46214b53ed90e4 = $(`<div id="html_f643cad6b63e550b7d46214b53ed90e4" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Hurlingham<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_cf3fd494a1979ea0a7eee8e2f43065b3.setContent(html_f643cad6b63e550b7d46214b53ed90e4);
+            
+        
+
+        marker_09be5c45c9454cb434169608a2c248ee.bindPopup(popup_cf3fd494a1979ea0a7eee8e2f43065b3)
+        ;
+
+        
+    
+    
+            var marker_b640f64ca44b1e6b6456ab857baebe75 = L.marker(
+                [-24.188804214377985, -65.2929576736255],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_662b3ba70cc5e962960183d371c3b744 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b640f64ca44b1e6b6456ab857baebe75.setIcon(icon_662b3ba70cc5e962960183d371c3b744);
+        
+    
+        var popup_2f80979ce19fdb91c9452dcd6cb032a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc609e8b21d3b95f50588502085d9d87 = $(`<div id="html_fc609e8b21d3b95f50588502085d9d87" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Jujuy<br>Título: Farmacia y Biotecnología</div>`)[0];
+                popup_2f80979ce19fdb91c9452dcd6cb032a3.setContent(html_fc609e8b21d3b95f50588502085d9d87);
+            
+        
+
+        marker_b640f64ca44b1e6b6456ab857baebe75.bindPopup(popup_2f80979ce19fdb91c9452dcd6cb032a3)
+        ;
+
+        
+    
+    
+            var marker_02b2d8206d76649d8dfc22eb5535a483 = L.marker(
+                [-34.904110460162585, -57.94329966957589],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_c23dc4c7b6d3858e7286fa2218611c29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_02b2d8206d76649d8dfc22eb5535a483.setIcon(icon_c23dc4c7b6d3858e7286fa2218611c29);
+        
+    
+        var popup_3b92aa63f62299b3fb63be5a074c2e2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6649c809d725e541ea118b537dc1f651 = $(`<div id="html_6649c809d725e541ea118b537dc1f651" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de La Plata<br>Título: Licenciado en Biotecnología y Biología Molecular</div>`)[0];
+                popup_3b92aa63f62299b3fb63be5a074c2e2d.setContent(html_6649c809d725e541ea118b537dc1f651);
+            
+        
+
+        marker_02b2d8206d76649d8dfc22eb5535a483.bindPopup(popup_3b92aa63f62299b3fb63be5a074c2e2d)
+        ;
+
+        
+    
+    
+            var marker_9d520f012445fdf37f84ebf08c2cb098 = L.marker(
+                [-26.801368565136634, -60.44705590745591],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_63db8b67805c396cc36d35bc42949684 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d520f012445fdf37f84ebf08c2cb098.setIcon(icon_63db8b67805c396cc36d35bc42949684);
+        
+    
+        var popup_c74b2163e64c4d82e189736595abcec9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82277cb4fd54e3d848ea426743209ff3 = $(`<div id="html_82277cb4fd54e3d848ea426743209ff3" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional del Chaco Austral<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_c74b2163e64c4d82e189736595abcec9.setContent(html_82277cb4fd54e3d848ea426743209ff3);
+            
+        
+
+        marker_9d520f012445fdf37f84ebf08c2cb098.bindPopup(popup_c74b2163e64c4d82e189736595abcec9)
+        ;
+
+        
+    
+    
+            var marker_546c928d3b4a18822a9c52f9e16a5ac7 = L.marker(
+                [-31.63954782340808, -60.67352870258578],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_05bf13e590fdd4c52e425d957317d579 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_546c928d3b4a18822a9c52f9e16a5ac7.setIcon(icon_05bf13e590fdd4c52e425d957317d579);
+        
+    
+        var popup_33090dc92030f120571d7b153eacd480 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_921953adcd00073c6a80843ab338df6e = $(`<div id="html_921953adcd00073c6a80843ab338df6e" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional del Litoral<br>Título: Licenciado/a en Biotecnología</div>`)[0];
+                popup_33090dc92030f120571d7b153eacd480.setContent(html_921953adcd00073c6a80843ab338df6e);
+            
+        
+
+        marker_546c928d3b4a18822a9c52f9e16a5ac7.bindPopup(popup_33090dc92030f120571d7b153eacd480)
+        ;
+
+        
+    
+    
+            var marker_2cc91ee549b117b5bbfcd3ddad5e0dab = L.marker(
+                [-31.440365579496486, -60.940604614781854],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_88c8a46d067ab2a4b0394e7600f33994 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2cc91ee549b117b5bbfcd3ddad5e0dab.setIcon(icon_88c8a46d067ab2a4b0394e7600f33994);
+        
+    
+        var popup_7f413ad1513930de5fa94e9b92124da4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae4a333c4cc91639ba65675b52a6e87b = $(`<div id="html_ae4a333c4cc91639ba65675b52a6e87b" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional del Litoral<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_7f413ad1513930de5fa94e9b92124da4.setContent(html_ae4a333c4cc91639ba65675b52a6e87b);
+            
+        
+
+        marker_2cc91ee549b117b5bbfcd3ddad5e0dab.bindPopup(popup_7f413ad1513930de5fa94e9b92124da4)
+        ;
+
+        
+    
+    
+            var marker_59257b241568e866b1674bba498503b0 = L.marker(
+                [-31.63721966055812, -60.70713047630458],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_febcfb25f3e83bfa623d7206f1709ea7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_59257b241568e866b1674bba498503b0.setIcon(icon_febcfb25f3e83bfa623d7206f1709ea7);
+        
+    
+        var popup_aa0296474812971d164506829724868b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2200bc8b814cdfaff6d9df9c76c273d4 = $(`<div id="html_2200bc8b814cdfaff6d9df9c76c273d4" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional del Litoral<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_aa0296474812971d164506829724868b.setContent(html_2200bc8b814cdfaff6d9df9c76c273d4);
+            
+        
+
+        marker_59257b241568e866b1674bba498503b0.bindPopup(popup_aa0296474812971d164506829724868b)
+        ;
+
+        
+    
+    
+            var marker_3d24fce57d816bc6c991863118a3b01c = L.marker(
+                [-34.65092285733145, -58.77665814651071],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_90e9225e8af45bee2faba0c7db35f994 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d24fce57d816bc6c991863118a3b01c.setIcon(icon_90e9225e8af45bee2faba0c7db35f994);
+        
+    
+        var popup_b4e2771ca47123ef6bd0f842cd1c692d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c84c5d08d3fc6c18c0812e0677950f20 = $(`<div id="html_c84c5d08d3fc6c18c0812e0677950f20" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Moreno<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_b4e2771ca47123ef6bd0f842cd1c692d.setContent(html_c84c5d08d3fc6c18c0812e0677950f20);
+            
+        
+
+        marker_3d24fce57d816bc6c991863118a3b01c.bindPopup(popup_b4e2771ca47123ef6bd0f842cd1c692d)
+        ;
+
+        
+    
+    
+            var marker_b197bf7f2ac851901a2dbb14a10780fd = L.marker(
+                [-34.65092285733145, -58.77665814651071],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_1ccfffc9827847369b24494c03e97f7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b197bf7f2ac851901a2dbb14a10780fd.setIcon(icon_1ccfffc9827847369b24494c03e97f7a);
+        
+    
+        var popup_9670fa4705ac3946d95dd286fd421846 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75973023f2f8dd2aab3a92218a0ad438 = $(`<div id="html_75973023f2f8dd2aab3a92218a0ad438" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Moreno<br>Título: Técnico Universitario en Biotecnología</div>`)[0];
+                popup_9670fa4705ac3946d95dd286fd421846.setContent(html_75973023f2f8dd2aab3a92218a0ad438);
+            
+        
+
+        marker_b197bf7f2ac851901a2dbb14a10780fd.bindPopup(popup_9670fa4705ac3946d95dd286fd421846)
+        ;
+
+        
+    
+    
+            var marker_0f4136ac1497fec0abeedb3c654501a7 = L.marker(
+                [-34.70653174561923, -58.278801216279135],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_264bd37acae6ba34e2f8498c80403a55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f4136ac1497fec0abeedb3c654501a7.setIcon(icon_264bd37acae6ba34e2f8498c80403a55);
+        
+    
+        var popup_92f5fb2b1ccea9a7f72c8deb9f78ae92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c439cbca36fa35ae5ff19fee8439db9c = $(`<div id="html_c439cbca36fa35ae5ff19fee8439db9c" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Quilmes<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_92f5fb2b1ccea9a7f72c8deb9f78ae92.setContent(html_c439cbca36fa35ae5ff19fee8439db9c);
+            
+        
+
+        marker_0f4136ac1497fec0abeedb3c654501a7.bindPopup(popup_92f5fb2b1ccea9a7f72c8deb9f78ae92)
+        ;
+
+        
+    
+    
+            var marker_7ce12df79a615889e6a18156b340aa90 = L.marker(
+                [-34.70653174561923, -58.278801216279135],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_85d8ff9192151daf549585d90c7a1f20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ce12df79a615889e6a18156b340aa90.setIcon(icon_85d8ff9192151daf549585d90c7a1f20);
+        
+    
+        var popup_478f0bf8f5cf37daf5ff4e95e1999bdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abb447ed52a5feb1b0329cf9f07f2b06 = $(`<div id="html_abb447ed52a5feb1b0329cf9f07f2b06" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Quilmes<br>Título: Técnico Universitario en Biotecnología</div>`)[0];
+                popup_478f0bf8f5cf37daf5ff4e95e1999bdd.setContent(html_abb447ed52a5feb1b0329cf9f07f2b06);
+            
+        
+
+        marker_7ce12df79a615889e6a18156b340aa90.bindPopup(popup_478f0bf8f5cf37daf5ff4e95e1999bdd)
+        ;
+
+        
+    
+    
+            var marker_76ec9037877592560982ef0ad18fbca0 = L.marker(
+                [-31.251008667920047, -61.50252041926893],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_3680e3d4c0ccc80b8d1eddbe19764235 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_76ec9037877592560982ef0ad18fbca0.setIcon(icon_3680e3d4c0ccc80b8d1eddbe19764235);
+        
+    
+        var popup_358bad646f50c6e31116b89a5844cad6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69a1264b3aa8b977728a785273c222ef = $(`<div id="html_69a1264b3aa8b977728a785273c222ef" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Rafaela<br>Título: Técnico/a Universitario/a en Biotecnología</div>`)[0];
+                popup_358bad646f50c6e31116b89a5844cad6.setContent(html_69a1264b3aa8b977728a785273c222ef);
+            
+        
+
+        marker_76ec9037877592560982ef0ad18fbca0.bindPopup(popup_358bad646f50c6e31116b89a5844cad6)
+        ;
+
+        
+    
+    
+            var marker_4dc229002309dd727c555a83f7de2d55 = L.marker(
+                [-39.03187895742345, -67.57264220518701],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_7353aa74e97c7d14839ab1eb4ce15b5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4dc229002309dd727c555a83f7de2d55.setIcon(icon_7353aa74e97c7d14839ab1eb4ce15b5d);
+        
+    
+        var popup_858e0c3bbc83ca4b855ac624667004c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24395d323946b935f69462886580f358 = $(`<div id="html_24395d323946b935f69462886580f358" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Río Negro<br>Título: Ingeniero en Biotecnología</div>`)[0];
+                popup_858e0c3bbc83ca4b855ac624667004c6.setContent(html_24395d323946b935f69462886580f358);
+            
+        
+
+        marker_4dc229002309dd727c555a83f7de2d55.bindPopup(popup_858e0c3bbc83ca4b855ac624667004c6)
+        ;
+
+        
+    
+    
+            var marker_f40366ba23acf42adbe30a19665d8daa = L.marker(
+                [-39.0955574717544, -67.09431579091361],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_7e40e1b2da98f82faf256469a903003e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f40366ba23acf42adbe30a19665d8daa.setIcon(icon_7e40e1b2da98f82faf256469a903003e);
+        
+    
+        var popup_64cd60756b3134d0440110c3d500b38e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f24d79644e7fae807da397bcb620d85b = $(`<div id="html_f24d79644e7fae807da397bcb620d85b" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Río Negro<br>Título: Ingeniero en Biotecnología</div>`)[0];
+                popup_64cd60756b3134d0440110c3d500b38e.setContent(html_f24d79644e7fae807da397bcb620d85b);
+            
+        
+
+        marker_f40366ba23acf42adbe30a19665d8daa.bindPopup(popup_64cd60756b3134d0440110c3d500b38e)
+        ;
+
+        
+    
+    
+            var marker_9639d4709901e14bfbf8c1d0e9b45170 = L.marker(
+                [-32.93857195957142, -60.66284437256713],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_0a379fc18b9cd186599d5b07f7e2e4e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9639d4709901e14bfbf8c1d0e9b45170.setIcon(icon_0a379fc18b9cd186599d5b07f7e2e4e5);
+        
+    
+        var popup_14c2dea3f31053ee25dce568295cea69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f9e6a9ec343d403232dc4ea85249e5f = $(`<div id="html_6f9e6a9ec343d403232dc4ea85249e5f" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Rosario<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_14c2dea3f31053ee25dce568295cea69.setContent(html_6f9e6a9ec343d403232dc4ea85249e5f);
+            
+        
+
+        marker_9639d4709901e14bfbf8c1d0e9b45170.bindPopup(popup_14c2dea3f31053ee25dce568295cea69)
+        ;
+
+        
+    
+    
+            var marker_fe8126153cf4be48bd7c00238dced194 = L.marker(
+                [-33.290989602150574, -66.34137851068792],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_d358ee120c5d2fa6287690844163427b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe8126153cf4be48bd7c00238dced194.setIcon(icon_d358ee120c5d2fa6287690844163427b);
+        
+    
+        var popup_04258fac6f87bfebbdfb76ab3aed89f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8c4c9a5fceb36bdcb140d77667ea92e = $(`<div id="html_b8c4c9a5fceb36bdcb140d77667ea92e" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de San Luis<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_04258fac6f87bfebbdfb76ab3aed89f2.setContent(html_b8c4c9a5fceb36bdcb140d77667ea92e);
+            
+        
+
+        marker_fe8126153cf4be48bd7c00238dced194.bindPopup(popup_04258fac6f87bfebbdfb76ab3aed89f2)
+        ;
+
+        
+    
+    
+            var marker_ad3a9da53ecddf3294ee7a26bb038fb0 = L.marker(
+                [-34.57988675474063, -58.52439136322363],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_6ed044db8a9706f08341d1885fb6d413 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad3a9da53ecddf3294ee7a26bb038fb0.setIcon(icon_6ed044db8a9706f08341d1885fb6d413);
+        
+    
+        var popup_8baf3f63648ae6ab17af7170b80e18c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c7728dbd9a1bfa4f4a5e1ff008c5b89 = $(`<div id="html_2c7728dbd9a1bfa4f4a5e1ff008c5b89" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de San Martín<br>Título: Bachiller Universitario en Ciencias con Orientación en Biotecnología</div>`)[0];
+                popup_8baf3f63648ae6ab17af7170b80e18c4.setContent(html_2c7728dbd9a1bfa4f4a5e1ff008c5b89);
+            
+        
+
+        marker_ad3a9da53ecddf3294ee7a26bb038fb0.bindPopup(popup_8baf3f63648ae6ab17af7170b80e18c4)
+        ;
+
+        
+    
+    
+            var marker_7e389c2b7020b687215f1625f2c8e6ea = L.marker(
+                [-34.57988675474063, -58.52439136322363],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_37b52f6edebf90628861153ef570d45a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e389c2b7020b687215f1625f2c8e6ea.setIcon(icon_37b52f6edebf90628861153ef570d45a);
+        
+    
+        var popup_59560d0878d9dc5b3dba138a6cd8ca7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba79e4e8f85c8a32e42e74dba23c3290 = $(`<div id="html_ba79e4e8f85c8a32e42e74dba23c3290" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de San Martín<br>Título: Ingeniero en Agrobiotecnología</div>`)[0];
+                popup_59560d0878d9dc5b3dba138a6cd8ca7a.setContent(html_ba79e4e8f85c8a32e42e74dba23c3290);
+            
+        
+
+        marker_7e389c2b7020b687215f1625f2c8e6ea.bindPopup(popup_59560d0878d9dc5b3dba138a6cd8ca7a)
+        ;
+
+        
+    
+    
+            var marker_ba0ed909943b0f970d635875fe2d0fc3 = L.marker(
+                [-34.57988675474063, -58.52439136322363],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_9de5be6634d60979e7f7d801a8b0800d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba0ed909943b0f970d635875fe2d0fc3.setIcon(icon_9de5be6634d60979e7f7d801a8b0800d);
+        
+    
+        var popup_60455ae82ed1bf0f0a9979241bd4ac94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b10cb5790506176e205e9fac123c0fa = $(`<div id="html_9b10cb5790506176e205e9fac123c0fa" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de San Martín<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_60455ae82ed1bf0f0a9979241bd4ac94.setContent(html_9b10cb5790506176e205e9fac123c0fa);
+            
+        
+
+        marker_ba0ed909943b0f970d635875fe2d0fc3.bindPopup(popup_60455ae82ed1bf0f0a9979241bd4ac94)
+        ;
+
+        
+    
+    
+            var marker_3c3b77517dfb09e8fbfb4ecde988bb6d = L.marker(
+                [-34.57988675474063, -58.52439136322363],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_d5012da52a04532bc61e71f6bf21f8cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c3b77517dfb09e8fbfb4ecde988bb6d.setIcon(icon_d5012da52a04532bc61e71f6bf21f8cf);
+        
+    
+        var popup_d05aae83e06c7081db85fefeca988dd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea8c737eca2b24efffa22c3c58f3c4c8 = $(`<div id="html_ea8c737eca2b24efffa22c3c58f3c4c8" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de San Martín<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_d05aae83e06c7081db85fefeca988dd8.setContent(html_ea8c737eca2b24efffa22c3c58f3c4c8);
+            
+        
+
+        marker_3c3b77517dfb09e8fbfb4ecde988bb6d.bindPopup(popup_d05aae83e06c7081db85fefeca988dd8)
+        ;
+
+        
+    
+    
+            var marker_c64697855c773232e0fe9ea60f7417e0 = L.marker(
+                [-26.83611956144673, -65.21131096392126],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_76398f94dc6abe117f577f38beb2a6fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c64697855c773232e0fe9ea60f7417e0.setIcon(icon_76398f94dc6abe117f577f38beb2a6fb);
+        
+    
+        var popup_037efb8adadcd37e2c7d22a772adbc60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccc91483177965db886775525395b135 = $(`<div id="html_ccc91483177965db886775525395b135" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional de Tucumán<br>Título: Licenciado en Biotecnología</div>`)[0];
+                popup_037efb8adadcd37e2c7d22a772adbc60.setContent(html_ccc91483177965db886775525395b135);
+            
+        
+
+        marker_c64697855c773232e0fe9ea60f7417e0.bindPopup(popup_037efb8adadcd37e2c7d22a772adbc60)
+        ;
+
+        
+    
+    
+            var marker_5aed14edd64d20050a361611288d8066 = L.marker(
+                [-34.52065879315295, -58.74565203549523],
+                {}
+            ).addTo(map_437b14d5025821fd50bbfae5d7d64c1c);
+        
+    
+            var icon_25d07882d9b1f3e3124577298e22143f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5aed14edd64d20050a361611288d8066.setIcon(icon_25d07882d9b1f3e3124577298e22143f);
+        
+    
+        var popup_0cb9e80135cba4d2621e25abfa275d7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a2745b6db2c9fbba84e1749415e3dec = $(`<div id="html_5a2745b6db2c9fbba84e1749415e3dec" style="width: 100.0%; height: 100.0%;">Universidad: Universidad Nacional José C. Paz<br>Título: Licenciado/a en Biotecnología</div>`)[0];
+                popup_0cb9e80135cba4d2621e25abfa275d7d.setContent(html_5a2745b6db2c9fbba84e1749415e3dec);
+            
+        
+
+        marker_5aed14edd64d20050a361611288d8066.bindPopup(popup_0cb9e80135cba4d2621e25abfa275d7d)
+        ;
+
+        
+    
+</script>
+</html>
